@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Denied</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #1b263b, #0d1b2a);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.denied-container {
+  text-align: center;
+  background-color: rgba(10, 20, 30, 0.85);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  max-width: 500px;
+  border: 2px solid #ff3c3c;
+}
+
+.denied-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #ff4e4e;
+  letter-spacing: 1px;
+}
+
+.emoji {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.denied-container hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff3c3c, transparent);
+  margin: 20px 0;
+}
+
+.denied-container h3 {
+  font-weight: normal;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4a77d4;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #365dc6;
+}
+.back-btn:focus-visible {
+  outline: 2px solid #ceebff; outline-offset: 3px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="denied-container">
+    <h1>Access Denied <span class="emoji">🚫</span></h1>
+    <hr>
+    <h3>We don't recognize you.<br>You don't belong here.</h3>
+    <a href="login.html" class="back-btn">← Go Back</a>
+  </div>
+</body>
+</html>

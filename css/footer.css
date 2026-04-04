@@ -1,0 +1,104 @@
+/* === Footer === */
+.footer {
+    background-color: #1a385a;
+    color: azure;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+.footer .about, .footer .disclaimer, .footer .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 100px;
+    max-width: 73%;
+}
+
+.footer .socmed{
+text-align: center;
+}
+
+.footer .socmed a {
+    display: inline-block;
+    margin: 3px;
+}
+
+.footer strong, .footer b {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .icon {
+    width: 28px;
+    height: 28px;
+    margin: 5px 8px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.footer .icon:hover {
+    transform: scale(1.1);
+}
+
+.footer .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+    color: azure;
+    text-decoration: none;
+}
+
+.footer .contact-link:hover {
+    text-decoration: underline;
+}
+
+.footer .contact-link:focus-visible {
+    outline: 2px solid #ceebff;
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+.footer .contact-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.footer .contact-link span {
+    display: inline-block;
+}
+
+.footer-bottom {
+    background-color: #1a2d46;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer > div {
+        max-width: none;
+        width: 100%;
+    }
+
+    .footer .socmed a {
+        margin: 2px;
+    }
+}
+/* Footer End */

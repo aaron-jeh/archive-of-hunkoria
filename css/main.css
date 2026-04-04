@@ -1,0 +1,55 @@
+/* === Reset & Base Styles === */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    height: 100vh;
+}
+
+
+
+/* === Content Styles === */
+.content {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Home Card Style */
+.card {
+    background-color: #7b7b7b;
+    width: 91%;
+    font-size: large;
+    border-radius: 21px;
+    margin: 35px;
+    padding: 30px;
+    max-width: 90%;
+}
+
+.restricted-state {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.restricted-state p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.restricted-state a {
+    color: #eef6ff;
+    font-weight: 700;
+}
+/* Content End */
