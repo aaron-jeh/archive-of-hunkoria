@@ -6,5 +6,5 @@ async function loadPartial(id, file) {
   el.innerHTML = await res.text();
 }
 
-loadPartial("header-placeholder", "/header.html");
-loadPartial("footer-placeholder", "/footer.html");
+loadPartial("header-placeholder", "header.html");
+loadPartial("footer-placeholder", "footer.html");
