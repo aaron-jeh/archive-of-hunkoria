@@ -91,5 +91,7 @@ body {
     color: #cfe8ff;
     font-weight: 700;
 }
-
-/* Content End */
+.restricted a:hover {
+    color: #7da6cc;
+    text-decoration: underline;
+}

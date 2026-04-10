@@ -34,15 +34,14 @@ text-align: center;
     margin-bottom: 10px;
 }
 
-.footer .icon {
-    width: 28px;
-    height: 28px;
-    margin: 5px 8px 0 0;
-    transition: transform 0.3s ease;
+.footer .disclaimer a {
+    color: #cfe8ff;
+    text-decoration: none;
+    font-weight: 600;
 }
-
-.footer .icon:hover {
-    transform: scale(1.1);
+.footer .disclaimer a:hover {
+    color: #7da6cc;
+    text-decoration: underline;
 }
 
 .footer .contact-link {
