@@ -26,7 +26,9 @@ body {
 }
 
 /* Home Card Style */
-.card {
+.card,
+.card_hdc,
+.card_staff {
     background-color: #7b7b7b;
     width: 91%;
     font-size: large;
@@ -34,23 +36,59 @@ body {
     margin: 35px;
     padding: 30px;
     max-width: 90%;
+    position: relative;
+    overflow: hidden;
 }
 
-.restricted-state {
-    min-height: 140px;
+.card_hdc ul,
+.card_staff ul {
+    margin: 18px 0 0 18px;
+    line-height: 1.8;
+}
+
+.restricted {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 180px;
+    max-height: 60%;
+    padding: 28px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    color: #eef6ff;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(3, 12, 24, 0.85) 40%, rgba(3, 12, 24, 0.96) 100%);
+    backdrop-filter: blur(4px);
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    z-index: 1;
 }
 
-.restricted-state p {
+.restricted::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.04), transparent 10%);
+    pointer-events: none;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.restricted>* {
+    position: relative;
+    z-index: 2;
+}
+
+.restricted p {
     margin: 0;
     line-height: 1.6;
 }
 
-.restricted-state a {
-    color: #eef6ff;
+.restricted a {
+    color: #cfe8ff;
     font-weight: 700;
 }
 
